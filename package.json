@@ -1,0 +1,40 @@
+{
+  "name": "@caphub-group/theme-provider",
+  "version": "1.1.18",
+  "description": "theme provider for CapHub branded clients and websites",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "src/index.tsx",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/",
+    "access": "restricted"
+  },
+  "scripts": {
+    "prebuild": "npm run version:patch",
+    "version:patch": "npm version patch --no-git-tag-version",
+    "version:minor": "npm version minor --no-git-tag-version",
+    "version:major": "npm version major --no-git-tag-version",
+    "update": "npx npm-check-updates -u",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc && cp package.json ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CapHub-group/theme-provider.git"
+  },
+  "author": "Michael Nusair",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CapHub-group/theme-provider/issues"
+  },
+  "homepage": "https://github.com/CapHub-group/theme-provider#readme",
+  "dependencies": {
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
+    "@mui/material": "^5.13.0",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.4"
+  }
+}
