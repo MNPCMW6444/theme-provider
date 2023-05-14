@@ -1,6 +1,6 @@
 {
   "name": "@caphub-group/theme-provider",
-  "version": "1.1.20",
+  "version": "1.1.21",
   "description": "theme provider for CapHub branded clients and websites",
   "type": "module",
   "main": "dist/index.js",

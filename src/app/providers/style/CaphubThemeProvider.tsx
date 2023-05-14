@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from "react";
-import { ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles/index.js";
 import caphubTheme from "../../../content/style/caphubTheme.js";
 
 interface CaphubThemeProviderProps {
