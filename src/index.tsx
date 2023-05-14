@@ -1,3 +1,3 @@
-import CaphubThemeProvider from "./providers/style/CaphubThemeProvider";
+import CaphubThemeProvider from "./app/providers/style/CaphubThemeProvider.js";
 
 export default CaphubThemeProvider;
